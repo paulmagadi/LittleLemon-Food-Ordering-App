@@ -1,0 +1,28 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "allowJs": true, // Allows JavaScript files
+    "checkJs": false, // Prevents TypeScript from type-checking JavaScript files
+    "resolveJsonModule": true, // Allows importing JSON files
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts", // Includes all TypeScript files
+    "**/*.tsx", // Includes all TSX files
+    "**/*.js", // Includes all JavaScript files
+    "**/*.jsx", // Includes all JSX files
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+  ],
+  "exclude": [
+    "node_modules", // Excludes node_modules
+    "babel.config.js", // Excludes Babel config
+    "metro.config.js", // Excludes Metro config
+    "jest.config.js" // Excludes Jest config
+  ]
+}
